@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kalkulačka</title>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <input type="number" placeholder="První číslo" id="cislo1"><br>
+        <input type="number" placeholder="Druhé číslo" id="cislo2"><br>
+        <select id="operace">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="button" value="Vypočítat" onclick="Vypocet()">
+        <p id="vysledek">0</p>
+    </body>
+</html>
