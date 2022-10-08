@@ -2,5 +2,11 @@
   "name": "calculator-jest",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^29.1.2"
+  }
 }
