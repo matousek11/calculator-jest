@@ -8,9 +8,9 @@ jobs:
   test_pull_request:
     runs-on: ubuntu-latest
     steps:
-      uses: actions/checkout@v2
-      uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
       with:
         node-version: 12
-      run: yarn ci
-      run: yarn test
+      - run: yarn ci
+      - run: yarn test
