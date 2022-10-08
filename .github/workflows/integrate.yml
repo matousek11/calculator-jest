@@ -2,7 +2,7 @@ name: Continuos integration tests
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   test_pull_request:
@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      with:
-        node-version: 12
+        with:
+          node-version: 12
       - run: yarn ci
       - run: yarn test
